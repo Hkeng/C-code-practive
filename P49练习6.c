@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int m,k,i,n=0;
+	for(m=100;m<=200;m++)
+	{k=sqrt(m);
+	for(i=2;i<=k;i++)
+	{
+		if(m%i==0)
+			break;
+	}
+	if(i>k)
+	{
+		printf("%4d",m);
+		n++;
+	}
+	if(n%10==0)
+		printf("\n");
+	}
+	printf("\n");
+}
